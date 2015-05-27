@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>7 Minute Workout</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="lib/bootstrap.min.css" rel="stylesheet" />
+    <link href="lib/animate.min.css" rel="stylesheet" />
+    <link href="lib/Roboto.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/app.css" />
+</head>
+<body ng-app="app" ng-controller="RootController">
+    <div class="navbar navbar-default navbar-fixed-top top-navbar">
+        <div class="container app-container">
+            <div class="navbar-header">
+                <!--<h1>7 Minute Workout</h1>-->
+                <div class="navbar-brand">7 Minute Workout</div>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a ng-click="showWorkoutHistory()" title="Workout History">History</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container body-content app-container">
+        <div ng-view></div>
+    </div>
+    <script src="lib/angular.js"></script>
+    <script src="lib/angular-route.js"></script>
+    <script src="lib/angular-sanitize.js"></script>
+    <script src="lib/angular-animate.js"></script>
+    <script src="lib/ui-bootstrap-tpls.js"></script>
+    <script src="js/vendor/angular-media-player.js"></script>
+    <script src="js/vendor/angular-local-storage.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/root.js"></script>
+    <script src="js/7MinWorkout/workout.js"></script>
+    <script src="js/7MinWorkout/workoutvideos.js"></script>
+    <script src="js/7MinWorkout/filters.js"></script>
+    <script src="js/7MinWorkout/services.js"></script>
+
+</body>
+</html>
